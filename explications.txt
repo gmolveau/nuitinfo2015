@@ -1,0 +1,3 @@
+les view vont dans views
+les model vont dans src
+les controller vont dans web
