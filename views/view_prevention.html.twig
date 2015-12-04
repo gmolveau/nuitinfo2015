@@ -1,42 +1,80 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>
-		MVC : Model Prevention
-		</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<nav id="sidebar_nav">
-			<ul>
-				{% for cat in all_cat %}
-				<li>
-					<a href="http://suala.info/prevention/{{cat.cat}}">{{cat.cat}}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</nav>
-		<div>
-			<h1>
-				Les premiers reflexes en cas d'urgence
-			</h1>
-			<h2>
-				L'inconscience
-			</h2>
-			<a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-inconscience"></a>
-			<h2>
-				La défribilation : l'arrêt cardiaque 
-			</h2>
-			<a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-arret-cardiaque-la-defibrillation"></a>
-			<h2>
-				L'étouffement
-			</h2>
-			<a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-etouffement"></a>
-			<h2>
-				L'accident de voiture
-			</h2>
-			<a href="http://www.pompiers-14.org/pages/temoin-accident"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Suala - Gestion de crises</title>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ app.request.basepath }}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ app.request.basepath }}/lib/css/style.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+</head>
+<body>
 
+<!-- MENU A NE PAS TOUCHER -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://suala.info/"><span class="glyphicon glyphicon-home"></span> Suala</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/prevention">PREVENTION</a></li>
+        <li><a href="/crises">CRISES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- FIN MENU A NE PAS TOUCHER -->
+
+<!-- CONTAINER DU CONTENU -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">VOTRE TITRE</h3>
+	<!-- LISTE DE LIEN -->
+	<div class="col-md-3">
+		<div class="list-group">
+		<!-- POUR LES BOUCLES IL SUFFIT DE REPETER LA BALISE <A></A> CAVEC LA MEME SYNTAXE -->
+        {% for cat in all_cat %}
+        <li>
+          <a href="http://suala.info/prevention/{{cat.cat}} class-group-item">{{cat.cat}}</a>
+          <!-- <a href="#" class="list-group-item active"></a> -->
+        </li>
+        {% endfor %}
 		</div>
-	</body>
-</html>	
+	</div>
+	<!-- FINLISTE DE LIEN -->
+	
+	<!-- CONTENU -->
+	<div class="col-md-8">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<!-- MODIFIER ICI -->
+				<!-- SUPPRIMER LE LOREM IPSUM -->
+      <h2>L'inconscience</h2>
+      <a href="ttp://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-inconscience" class="list-group-item active">L'inconscience</a>
+      <h2>La défribilation : l'arrêt cardiaque </h2>
+      <a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-arret-cardiaque-la-defibrillation" class="list-group-item"></a>
+      <h2>L'étouffement</h2>
+      <a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-etouffement" class="list-group-item"></a>
+      <a href="#" class="list-group-item"></a>
+			</div> 
+		</div>
+	</div>
+	<!-- FIN CONTENU -->
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a> utilisé par <a href="team.html">Else Break</a> pour la Nuit de l'info 2015</p> 
+</footer>
+<script src="{{ app.request.basepath }}/web/lib/jquery/jquery.min.js"></script>
+<script src="{{ app.request.basepath }}/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
