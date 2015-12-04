@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ app.request.basepath }}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ app.request.basepath }}/lib/css/style.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span>Suala</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/prevention">PREVENTION</a></li>
+        <li><a href="/crises">CRISES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<button type="button" class="btn btn-danger btn-circle btn-xl" onclick="location.href='/view_index'"><i class="glyphicon glyphicon-remove"></i></button>
+	</div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Qu'est-ce que Suala ?</h3>
+  <p>Suala est avant tout un service (SAAS) destiné aux particulier et aux organismes de gestion de crises.</p>
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-4">
+		<h3>Particulier ?</h3>
+		<p>Suala vous permet de signaler ou de consulter les évènements importants dans le monde. Grâce à cela, vous pourrez préparer vos déplacements et vous mettre en sécurité.</p>
+		<p>L'outil de prévention permet à tous de consulter un certains nombre d'informations en cas de crise. Que faire en cas de gros incendie ou en cas de fusillade ? Tout est indiqué dans les différentes fiches qui sont à la disposition de tous.</p>
+	</div>
+	<div class="col-md-4">
+		<h3>Organisme ?</h3>
+		<p>Suala permet aux organismes de gérer les crises en cours et de prendre en charge certaines.</p>
+		<p>Suala est pour les organismes, un réseau permettant de coordonner les actions et d'avertir les autres organismes des actions en cours.</p>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>

@@ -26,7 +26,7 @@ $app->register(
             'host'     => 'localhost',
             'dbname'   => 'nuitinfo',
             'port'     => 3306,
-            'user'     => 'user',
+            'user'     => 'root',
             'password' => '',
         ),
         // optional PDO attributes used in PDO constructor 4th argument driver_options

@@ -7,9 +7,9 @@ $app->register(new Silex\Provider\SessionServiceProvider());
 
 // Home page
 $app->get('/', function () use ($app) {
-    require '../src/model.php'; //appel du model
-    $articles = $pdo->query('select * from t_article order by art_id desc'); // appel de la fonction pour récupérer ce dont on a besoin
-    return $app['twig']->render('index.html.twig', array('articles' => $articles)); //appel du view
+   // require '../src/model.php'; //appel du model
+   // $articles = $pdo->query('select * from t_article order by art_id desc'); // appel de la fonction pour récupérer ce dont on a besoin
+    return $app['twig']->render('exemple.html.twig'); //appel du view
 });
 
 
