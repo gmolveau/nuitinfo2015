@@ -41,11 +41,12 @@
 	<div class="col-md-3">
 		<div class="list-group">
 		<!-- POUR LES BOUCLES IL SUFFIT DE REPETER LA BALISE <A></A> CAVEC LA MEME SYNTAXE -->
-		  <a href="#" class="list-group-item active">AJOUTER "ACTIVE" DANS LA CLASS</a>
-		  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-		  <a href="#" class="list-group-item">Morbi leo risus</a>
-		  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-		  <a href="#" class="list-group-item">Vestibulum at eros</a>
+        {% for cat in all_cat %}
+        <li>
+          <a href="http://suala.info/prevention/{{cat.cat}} class-group-item">{{cat.cat}}</a>
+          <!-- <a href="#" class="list-group-item active"></a> -->
+        </li>
+        {% endfor %}
 		</div>
 	</div>
 	<!-- FINLISTE DE LIEN -->
@@ -56,15 +57,13 @@
 			<div class="panel-body">
 				<!-- MODIFIER ICI -->
 				<!-- SUPPRIMER LE LOREM IPSUM -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis mattis fermentum. Mauris vel quam eget nulla malesuada aliquet. Fusce neque urna, placerat eget placerat eu, tristique volutpat massa. Donec accumsan scelerisque diam, eget elementum magna tristique ut. Sed cursus mi nec est lobortis, eget consectetur tellus malesuada. Curabitur nec facilisis ex. Nulla rhoncus ligula nec dapibus condimentum. Vestibulum lobortis urna pellentesque, ullamcorper lorem cursus, mattis lorem. Nullam vestibulum efficitur efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-<p>Nulla sed nisl sed arcu tempor aliquam in id felis. Sed at quam ac nisl luctus mollis. Ut accumsan diam at accumsan viverra. Quisque varius imperdiet ex, at rutrum est elementum at. Cras eu massa eget tortor vestibulum pellentesque. Quisque molestie semper eleifend. Integer feugiat lorem quis lectus tempus maximus. Proin purus nulla, feugiat et ipsum eu, vehicula elementum massa. Suspendisse luctus bibendum orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-<p>Ut ultrices laoreet ex, luctus finibus enim blandit ac. Nunc eleifend turpis in quam aliquam suscipit. Mauris vulputate convallis libero sed blandit. Quisque ac dignissim justo. Cras semper id erat in aliquam. Curabitur quam erat, volutpat sit amet aliquet eget, egestas vitae libero. Integer vulputate neque nec sem rutrum volutpat. Nullam nisi lorem, maximus nec nisl porta, interdum convallis quam. Phasellus sed sapien scelerisque, tincidunt enim quis, eleifend lectus. Quisque venenatis est quis vulputate tincidunt. Vivamus lobortis mattis nulla vel lacinia. Suspendisse vestibulum posuere ex, quis aliquam nunc. Quisque ultricies arcu nibh, ac fringilla arcu auctor sit amet.
-
-<p>Ut gravida turpis eget velit lacinia, a placerat erat ultrices. In velit arcu, vestibulum ac nisl rutrum, hendrerit fringilla orci. Aenean et rhoncus erat, ac dictum justo. Nullam quam neque, mattis sed accumsan ac, feugiat sed arcu. Proin vel efficitur lectus, eu accumsan purus. Donec quis neque eu nisi euismod vulputate. Sed ultrices luctus odio, sagittis consectetur neque. Aliquam sit amet tortor at tortor viverra eleifend eu in nisi. Nullam condimentum erat nec lectus consequat ultrices. Proin eget nisi tristique, auctor leo vitae, cursus odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer urna nisl, congue at augue in, fermentum bibendum nunc. Phasellus convallis rutrum ultrices. Donec eu est eget nisl lacinia ullamcorper ut non magna.
-
-<p>Fusce eget justo quis ex scelerisque viverra. Nulla id felis tempor, consectetur tellus ut, blandit orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque efficitur lectus nec quam venenatis fermentum. Vivamus urna dui, varius non erat sit amet, faucibus lobortis orci. Sed quis urna nec leo congue dignissim. In hac habitasse platea dictumst. Cras sed elit gravida, accumsan mauris ac, lobortis ante. Pellentesque convallis et justo at ultrices. Ut hendrerit pretium nibh posuere tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus lectus nisl, viverra ut faucibus sit amet, dapibus eu nisl.
+      <h2>L'inconscience</h2>
+      <a href="ttp://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-inconscience" class="list-group-item active">L'inconscience</a>
+      <h2>La défribilation : l'arrêt cardiaque </h2>
+      <a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-arret-cardiaque-la-defibrillation" class="list-group-item"></a>
+      <h2>L'étouffement</h2>
+      <a href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/L-etouffement" class="list-group-item"></a>
+      <a href="#" class="list-group-item"></a>
 			</div> 
 		</div>
 	</div>
