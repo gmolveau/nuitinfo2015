@@ -18,4 +18,11 @@ $app->get('/prevention', function() use ($app) {
 	$all_cat = get_all_cat();
 	return $app['twig']->render('view_prevention.html.twig', array('all_cat' => $all_cat));
 });
+
+$app->get('/prevention/{type}', function() use ($app) {
+    require '../src/model_preventions'.$type.'.php'; //appel du model
+    $crise = getTypeCrise($type));
+    return $app['twig']->render('view_preventions'.$type.'.html.twig');
+});
 ?>
+
