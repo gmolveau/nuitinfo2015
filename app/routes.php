@@ -21,7 +21,7 @@ $app->get('/prevention', function() use ($app) {
 
 $app->get('/prevention/{type}', function() use ($app) {
     require '../src/model_preventions'.$type.'.php'; //appel du model
-    $crise = getTypeCrise($type));
+    $crise = getTypeCrise($type);
     return $app['twig']->render('view_preventions'.$type.'.html.twig');
 });
 ?>
